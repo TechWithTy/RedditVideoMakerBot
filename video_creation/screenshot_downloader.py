@@ -1,28 +1,3 @@
-Glitch
-death305
-Invisible
-
-Glitch — 12:11 PM
-Hey what file do i need to change? How does this work with the reddit api change?
-a[SYNX]
- — 12:11 PM
-It uses Reddit Apps, and uses a web scraper using your own reddit account to fetch reddit posts off subreddits
-The file you need to change is: video_creation/screenshot_downloader.py
-Glitch — 12:12 PM
-Ah okay i tried it a while ago
-a[SYNX]
- — 12:12 PM
-Replace all code with this:
-import json
-import re
-from pathlib import Path
-from typing import Dict, Final
-
-import translators
-Expand
-message.txt
-15 KB
-﻿
 import json
 import re
 from pathlib import Path
@@ -330,5 +305,3 @@ def get_screenshots_of_reddit_posts(reddit_object: dict, screenshot_num: int):
         browser.close()
 
     print_substep("Screenshots downloaded Successfully.", style="bold green")
-message.txt
-15 KB
